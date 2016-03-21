@@ -1,0 +1,372 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="task_6.files/filelist.xml">
+<link rel=Edit-Time-Data href="task_6.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Численное решение задачи Коши для обыкновенных дифференциальных
+уравнений</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Volena</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Volena</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2005-11-16T05:39:00Z</o:Created>
+  <o:LastSaved>2005-11-16T05:39:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>156</o:Words>
+  <o:Characters>895</o:Characters>
+  <o:Company>ivm</o:Company>
+  <o:Lines>7</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1049</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Обычный;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:18.0pt;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	tab-stops:18.0pt;
+	font-size:14.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	font-weight:normal;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=RU link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:16.0pt;font-family:Arial'>Численное решение
+задачи Коши для обыкновенных дифференциальных уравнений<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:16.0pt;font-family:Arial'>&nbsp;<o:p></o:p></span></b></p>
+
+<h1>Решить задачу Коши для ОДУ<o:p></o:p></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><sub><span
+style='font-size:14.0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:191.25pt;
+ height:57pt'>
+ <v:imagedata src="task_6.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=255 height=76
+src="task_6.files/image002.gif" v:shapes="_x0000_i1025"><![endif]></span></sub><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>1)
+Методом Рунге-Кутта с автоматическим выбором шага при заданной точности &#949;
+&gt;0 на каждом шаге;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>2)
+Методом Рунге-Кутта с постоянным шагом </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>h</span><span
+style='font-size:14.0pt'>=(</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>b</span><span style='font-size:14.0pt'>-</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:14.0pt'>0</span></sub><span style='font-size:14.0pt'>)/</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>N</span><span
+style='font-size:14.0pt'>, где </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>N</span><span style='font-size:14.0pt'> – число шагов,
+полученных в пункте 1);<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>3)
+Методом Адамса с постоянным шагом </span><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>h</span><span style='font-size:14.0pt'>=(</span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+style='font-size:14.0pt'>-</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:14.0pt'>0</span></sub><span
+style='font-size:14.0pt'>)/</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>N</span><span style='font-size:14.0pt'>, где </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>N</span><span
+style='font-size:14.0pt'> – число шагов, полученных в пункте 1).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>Вывести
+на печать в виде таблиц и графиков точное и приближенное решение, полученных в
+пунктах 1) – 3).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><i style='mso-bidi-font-style:
+normal'>Примечание: </i><i style='mso-bidi-font-style:normal'><span lang=EN-US
+style='mso-ansi-language:EN-US'><o:p></o:p></span></i></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><i style='mso-bidi-font-style:
+normal'>Порядок методов Рунге-Кутта и Адамса, соответствующий вашему варианту
+спрашивайте у преподавателя.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><i style='mso-bidi-font-style:
+normal'>Если Вы забыли, как работать с графикой в </i><i style='mso-bidi-font-style:
+normal'><span lang=EN-US style='mso-ansi-language:EN-US'>Delphi</span><span
+lang=EN-US> </span>смотри <a href="grafik.htm">здесь</a>.<o:p></o:p></i></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>&nbsp;</span><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>Варианты заданий:<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>a</span>) <span lang=EN-US style='mso-ansi-language:
+EN-US'>h</span><sub>0</sub>=0.5; <span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span><sub>0</sub>=1; <span lang=EN-US style='mso-ansi-language:EN-US'>b</span>=6;
+<span lang=EN-US style='mso-ansi-language:EN-US'>y</span><sub>0</sub>=10; <span
+lang=EN-US style='mso-ansi-language:EN-US'>g</span>(<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>)=2(<span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span>-2); <span lang=EN-US style='mso-ansi-language:EN-US'>F</span>(<span
+lang=EN-US style='mso-ansi-language:EN-US'>x</span>)=<span lang=EN-US
+style='mso-ansi-language:EN-US'>&#966;</span>(<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>)<span lang=EN-US style='mso-ansi-language:
+EN-US'>&#968;</span>(<span lang=EN-US style='mso-ansi-language:EN-US'>x</span>),
+где<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>функции <span lang=EN-US
+style='mso-ansi-language:EN-US'>&#966;</span>(<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>):<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>1) <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:54pt;height:23.25pt'>
+ <v:imagedata src="task_6.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=72 height=31
+src="task_6.files/image004.gif" v:shapes="_x0000_i1026"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>2) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:32.25pt;height:27pt'>
+ <v:imagedata src="task_6.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=43 height=36
+src="task_6.files/image006.gif" v:shapes="_x0000_i1027"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>3) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:53.25pt;height:27pt'>
+ <v:imagedata src="task_6.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=71 height=36
+src="task_6.files/image008.gif" v:shapes="_x0000_i1028"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>4) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1029"
+ type="#_x0000_t75" style='width:39pt;height:27pt'>
+ <v:imagedata src="task_6.files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=52 height=36
+src="task_6.files/image010.gif" v:shapes="_x0000_i1029"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>5) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+ type="#_x0000_t75" style='width:63.75pt;height:27pt'>
+ <v:imagedata src="task_6.files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=85 height=36
+src="task_6.files/image012.gif" v:shapes="_x0000_i1030"><![endif]></sub>6) <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:84pt;height:27pt'>
+ <v:imagedata src="task_6.files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=112 height=36
+src="task_6.files/image014.gif" v:shapes="_x0000_i1031"><![endif]></sub><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>7) <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:60.75pt;height:27pt'>
+ <v:imagedata src="task_6.files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=81 height=36
+src="task_6.files/image016.gif" v:shapes="_x0000_i1032"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>8) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1033"
+ type="#_x0000_t75" style='width:101.25pt;height:27pt'>
+ <v:imagedata src="task_6.files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=135 height=36
+src="task_6.files/image018.gif" v:shapes="_x0000_i1033"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>9) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1034"
+ type="#_x0000_t75" style='width:111.75pt;height:27pt'>
+ <v:imagedata src="task_6.files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=149 height=36
+src="task_6.files/image020.gif" v:shapes="_x0000_i1034"><![endif]></sub><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>функции <span lang=EN-US
+style='mso-ansi-language:EN-US'>&#968;</span> (<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>):<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>1) <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:59.25pt;height:23.25pt'>
+ <v:imagedata src="task_6.files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=79 height=31
+src="task_6.files/image022.gif" v:shapes="_x0000_i1035"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>2) 0.01; 3) <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:18.75pt;height:21.75pt'>
+ <v:imagedata src="task_6.files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=25 height=29
+src="task_6.files/image024.gif" v:shapes="_x0000_i1036"><![endif]></sub>4) <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:29.25pt;height:21.75pt'>
+ <v:imagedata src="task_6.files/image025.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=39 height=29
+src="task_6.files/image026.gif" v:shapes="_x0000_i1037"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>5) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1038"
+ type="#_x0000_t75" style='width:24pt;height:21.75pt'>
+ <v:imagedata src="task_6.files/image027.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=32 height=29
+src="task_6.files/image028.gif" v:shapes="_x0000_i1038"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>6) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1039"
+ type="#_x0000_t75" style='width:38.25pt;height:18.75pt'>
+ <v:imagedata src="task_6.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=51 height=25
+src="task_6.files/image030.gif" v:shapes="_x0000_i1039"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>7) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1040"
+ type="#_x0000_t75" style='width:35.25pt;height:21.75pt'>
+ <v:imagedata src="task_6.files/image031.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=47 height=29
+src="task_6.files/image032.gif" v:shapes="_x0000_i1040"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>8) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1041"
+ type="#_x0000_t75" style='width:36pt;height:21.75pt'>
+ <v:imagedata src="task_6.files/image033.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=48 height=29
+src="task_6.files/image034.gif" v:shapes="_x0000_i1041"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>9) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1042"
+ type="#_x0000_t75" style='width:36.75pt;height:21.75pt'>
+ <v:imagedata src="task_6.files/image035.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=49 height=29
+src="task_6.files/image036.gif" v:shapes="_x0000_i1042"><![endif]></sub><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>&nbsp;<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>b</span>) <span lang=EN-US style='mso-ansi-language:
+EN-US'>h</span><sub>0</sub>=0.5; <span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span><sub>0</sub>=–1; <span lang=EN-US style='mso-ansi-language:EN-US'>b</span>=2<span
+lang=EN-US style='mso-ansi-language:EN-US'>&#960;</span>-1; <span lang=EN-US
+style='mso-ansi-language:EN-US'>y</span><sub>0</sub>=8; <span lang=EN-US
+style='mso-ansi-language:EN-US'>g</span>(<span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span>)=–<span lang=EN-US style='mso-ansi-language:EN-US'>sin</span>(<span
+lang=EN-US style='mso-ansi-language:EN-US'>x</span>+1); <span lang=EN-US
+style='mso-ansi-language:EN-US'>F</span>(<span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span>)=<span lang=EN-US style='mso-ansi-language:EN-US'>&#966;</span>(<span
+lang=EN-US style='mso-ansi-language:EN-US'>x</span>)<span lang=EN-US
+style='mso-ansi-language:EN-US'>&#968;</span>(<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>), где<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>функции <span lang=EN-US
+style='mso-ansi-language:EN-US'>&#966;</span>(<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>):<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>10) <span lang=EN-US
+style='mso-ansi-language:EN-US'>sin</span>(<span lang=EN-US style='mso-ansi-language:
+EN-US'>x</span>+1); 11) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1043"
+ type="#_x0000_t75" style='width:57.75pt;height:23.25pt'>
+ <v:imagedata src="task_6.files/image037.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=77 height=31
+src="task_6.files/image038.gif" v:shapes="_x0000_i1043"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>12) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1044"
+ type="#_x0000_t75" style='width:89.25pt;height:23.25pt'>
+ <v:imagedata src="task_6.files/image039.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=119 height=31
+src="task_6.files/image040.gif" v:shapes="_x0000_i1044"><![endif]></sub><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>функции <span lang=EN-US
+style='mso-ansi-language:EN-US'>&#968;</span> (<span lang=EN-US
+style='mso-ansi-language:EN-US'>x</span>):<o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'>10) <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1045" type="#_x0000_t75" style='width:62.25pt;height:30.75pt'>
+ <v:imagedata src="task_6.files/image041.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=83 height=41
+src="task_6.files/image042.gif" v:shapes="_x0000_i1045"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>11)<span style='mso-spacerun:yes'>  </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1046" type="#_x0000_t75" style='width:15pt;height:30.75pt'>
+ <v:imagedata src="task_6.files/image043.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=20 height=41
+src="task_6.files/image044.gif" v:shapes="_x0000_i1046"><![endif]></sub><span
+style='mso-spacerun:yes'> </span>12) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1047"
+ type="#_x0000_t75" style='width:57.75pt;height:15.75pt'>
+ <v:imagedata src="task_6.files/image045.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=77 height=21
+src="task_6.files/image046.gif" v:shapes="_x0000_i1047"><![endif]></sub><o:p></o:p></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span lang=EN-US
+style='mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

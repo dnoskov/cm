@@ -1,0 +1,1878 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./task_1.files/filelist.xml">
+<title>Прямые методы решения систем линейных алгебраических уравнений</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Волкова Елена</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Volena</o:LastAuthor>
+  <o:Revision>17</o:Revision>
+  <o:TotalTime>453</o:TotalTime>
+  <o:Created>2005-02-14T19:15:00Z</o:Created>
+  <o:LastSaved>2005-05-23T09:27:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>635</o:Words>
+  <o:Characters>3624</o:Characters>
+  <o:Lines>30</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>4450</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>92</w:Zoom>
+  <w:ActiveWritingStyle Lang="RU" VendorID="1" DLLVersion="512" NLCheck="0">1</w:ActiveWritingStyle>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:SuppressBottomSpacing/>
+   <w:SuppressTopSpacing/>
+   <w:SwapBordersFacingPages/>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+span.SPELLE
+	{mso-spl-e:yes;}
+span.GRAME
+	{mso-gram-e:yes;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+h1
+	{mso-style-next:Обычный;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:14.2pt;
+	text-align:justify;
+	line-height:150%;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:purple;
+	mso-font-kerning:0pt;
+	mso-fareast-language:EN-US;}
+h2
+	{mso-style-next:Обычный;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	color:purple;
+	mso-fareast-language:EN-US;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;
+	font-weight:bold;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:1.0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+p.FR2, li.FR2, div.FR2
+	{mso-style-name:FR2;
+	mso-style-parent:"";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:2.0pt;
+	margin-bottom:.0001pt;
+	text-indent:22.0pt;
+	line-height:105%;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:9.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 1.0cm 42.55pt 1.0cm;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 1.0cm 8.5pt 1.0cm;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:595.3pt 841.9pt;
+	margin:1.0cm 1.0cm 8.5pt 1.0cm;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.Section3
+	{page:Section3;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:1804424124;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1350306042 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:32.2pt;
+	mso-level-number-position:left;
+	margin-left:32.2pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:1840464783;
+	mso-list-type:hybrid;
+	mso-list-template-ids:572785204 1043785876 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l1:level1
+	{mso-level-start-at:4;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:32.2pt;
+	mso-level-number-position:left;
+	margin-left:32.2pt;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:2033796105;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1754109166 68747281 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l2:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body lang=RU style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<p class=MsoTitle><u><span style='color:purple'>Прямые методы решения систем
+линейных алгебраических уравнений<o:p></o:p></span></u></p>
+
+<p class=FR2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:0cm;text-indent:0cm;line-height:normal'><b><span style='font-size:
+12.0pt;mso-bidi-font-size:9.0pt;color:purple'>Решить систему уравнений
+следующими способами:<o:p></o:p></span></b></p>
+
+<p class=FR2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;line-height:normal;mso-list:l2 level1 lfo2;
+tab-stops:list 36.0pt'><![if !supportLists]><b><span style='font-size:12.0pt;
+mso-bidi-font-size:9.0pt;color:purple'>1)<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></b><![endif]><b><span style='font-size:12.0pt;mso-bidi-font-size:
+9.0pt;color:purple'>а) Методом Гаусса<o:p></o:p></span></b></p>
+
+<p class=FR2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:0cm;line-height:normal'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:9.0pt;color:purple'>б) Методом
+Гаусса с выбором главного элемента (какой именно метод см. в соответствии с
+вариантом)<o:p></o:p></span></b></p>
+
+<p class=FR2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-14.7pt;line-height:normal'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:9.0pt;color:purple'>2)<span
+style="mso-spacerun: yes">  </span>Методом квадратного корня<o:p></o:p></span></b></p>
+
+<p class=FR2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-14.7pt;line-height:normal'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:9.0pt;color:purple'>3)<span
+style="mso-spacerun: yes">  </span>Методом прогонки<span style="mso-spacerun:
+yes">  </span><o:p></o:p></span></b></p>
+
+<p class=FR2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-14.7pt;line-height:normal'><b><u><span
+style='font-size:12.0pt;mso-bidi-font-size:9.0pt;color:purple'>Требования к
+сдаче лаб. работы:<o:p></o:p></span></u></b></p>
+
+<p class=FR2 style='margin-top:12.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:21.3pt;text-indent:-.55pt;line-height:normal'><b><span
+style='font-size:12.0pt;mso-bidi-font-size:9.0pt;color:purple'>Программа должна
+быть реализована<span style="mso-spacerun: yes">  </span>для систем любого
+порядка. <o:p></o:p></span></b></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='border-collapse:collapse;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+ mso-yfti-tbllook:480;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=FR2 style='margin-top:22.0pt;margin-right:0cm;margin-bottom:12.0pt;
+  margin-left:0cm;text-indent:0cm;line-height:normal'><b><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>№Варианта<o:p></o:p></span></b></p>
+  </td>
+  <td width=102 style='width:76.3pt;border:solid windowtext .5pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=FR2 style='margin-top:22.0pt;margin-right:0cm;margin-bottom:12.0pt;
+  margin-left:0cm;text-indent:0cm;line-height:normal'><b><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>№Системы<o:p></o:p></span></b></p>
+  </td>
+  <td width=447 style='width:335.4pt;border:solid windowtext .5pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=FR2 style='margin-top:22.0pt;margin-right:0cm;margin-bottom:12.0pt;
+  margin-left:0cm;text-indent:0cm;line-height:normal'><b><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>Метод решения
+  системы<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:1'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>1<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>1<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>7<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>18<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в строке<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:2'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>2<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>2<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>8<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>18<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в столбце<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:3'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>3<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>3<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>9<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>18<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в матрице<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:4'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>4<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>4<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>10<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>18<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в строке<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:5'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>5<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>5<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>11<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>18<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в столбце<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:43.35pt;mso-yfti-irow:6'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:43.35pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>6<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.35pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>6<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>12<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>19<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>&nbsp;<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:43.35pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в матрице<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:7'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>7<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>7<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>13<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>19<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в строке<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:8'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>8<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>8<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>14<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>19<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в столбце<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:9'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>9<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>9<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>15<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>19<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в матрице<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:10'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>10<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>10<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>16<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>19<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в строке<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:11'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>11<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>11<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>17<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>19<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в столбце<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:12'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>12<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>12<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>7<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>19<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в матрице<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:13'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>13<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>13<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>8<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>18<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в строке<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:14'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>14<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>14<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>9<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>18<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в столбце<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='height:42.55pt;mso-yfti-irow:15;mso-yfti-lastrow:yes'>
+  <td width=103 style='width:77.1pt;border:solid windowtext .5pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt;
+  height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>15<o:p></o:p></span></p>
+  </td>
+  <td width=102 valign=top style='width:76.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>15<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>10<o:p></o:p></span></p>
+  <p class=FR2 align=center style='margin-left:0cm;text-align:center;
+  text-indent:0cm;line-height:normal'><span style='font-size:12.0pt;mso-bidi-font-size:
+  10.0pt;color:purple;mso-bidi-font-weight:bold'>18<o:p></o:p></span></p>
+  </td>
+  <td width=447 valign=top style='width:335.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt;height:42.55pt'>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Гаусса, Гаусса с выбором гл. элемента в матрице<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Квадратного корня<o:p></o:p></span></p>
+  <p class=FR2 style='margin-left:0cm;text-indent:0cm;line-height:normal'><span
+  style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-bidi-font-weight:
+  bold'>Прогонки<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=FR2 style='margin-top:22.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:0cm;text-indent:0cm;line-height:normal'><b><span style='font-size:
+12.0pt;mso-bidi-font-size:9.0pt;color:purple'>&nbsp;<o:p></o:p></span></b></p>
+
+<p class=FR2 style='margin-top:22.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:0cm;text-indent:0cm;line-height:normal'><b><span style='font-size:
+12.0pt;mso-bidi-font-size:9.0pt;color:purple'>Задачи<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>&nbsp;<o:p></o:p></span></p>
+
+<h2>Метод Гаусса, метод квадратного корня</h2>
+
+<h2><span style='font-weight:normal'>Решить системы уравнений.<o:p></o:p></span></h2>
+
+</div>
+
+<span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+mso-fareast-font-family:"Times New Roman";mso-ansi-language:RU;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA'><br clear=all style='page-break-before:auto;
+mso-break-type:section-break'>
+</span>
+
+<div class=Section2>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:32.2pt;text-align:justify;text-indent:-18.0pt;line-height:150%;
+mso-list:l0 level1 lfo4;tab-stops:list 32.2pt'><![if !supportLists]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>2,74</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>-<span style="mso-spacerun: yes">  </span>1,18х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 3,17х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=2,18,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:18.0pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span style="mso-spacerun:
+yes">     </span>1,12</span><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,83х</span><sub><span
+style='font-size:12.0pt;color:purple'>2<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>- 2,16х</span><sub><span style='font-size:12.0pt;color:purple'>3</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=-1,15,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:18.0pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span style="mso-spacerun:
+yes">     </span>0,81</span><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 1,27х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,76х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=3,23.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:32.2pt;text-align:justify;text-indent:-18.0pt;line-height:150%;
+mso-list:l0 level1 lfo4;tab-stops:list 32.2pt'><![if !supportLists]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>4</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 3х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+<span style="mso-spacerun:
+yes">   </span>х</span><sub><span style='font-size:12.0pt;color:purple'>4</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=3,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;line-height:
+150%'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">           </span>3</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 6х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 4х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=6,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;line-height:
+150%'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">           </span>2</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 4х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 6х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 3х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=4,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span style="mso-spacerun:
+yes"> </span></span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 3х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 4х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=7.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>3)<span style="mso-spacerun:
+yes">     </span></span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+<span style="mso-spacerun:
+yes">  </span>х</span><sub><span style='font-size:12.0pt;color:purple'>3 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:36.0pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span style="mso-spacerun:
+yes">          </span>х</span><sub><span style='font-size:12.0pt;color:purple'>2
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+<span style="mso-spacerun: yes">  </span>х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=2,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-138.25pt;margin-bottom:
+6.0pt;margin-left:32.2pt;text-align:justify;text-indent:-18.0pt;line-height:
+150%;mso-list:l1 level1 lfo6;tab-stops:list 32.2pt'><![if !supportLists]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes"> </span>1,1161</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,1254х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,1397х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,1490х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,5471,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:-39.0pt;margin-bottom:
+6.0pt;margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:
+150%'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,1582</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 1,1675х</span><sub><span style='font-size:12.0pt;color:purple'>2
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 0,1768х</span><sub><span style='font-size:12.0pt;color:purple'>3
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 0,1871х</span><sub><span style='font-size:12.0pt;color:purple'>4</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,6471,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,1968</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 0,2071х</span><sub><span style='font-size:12.0pt;color:purple'>2
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 1,2168х</span><sub><span style='font-size:12.0pt;color:purple'>3
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 0,2271х</span><sub><span style='font-size:12.0pt;color:purple'>4</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,7471,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,2368</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 0,2471х</span><sub><span style='font-size:12.0pt;color:purple'>2
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 0,2568х</span><sub><span style='font-size:12.0pt;color:purple'>3
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 1,2671х</span><sub><span style='font-size:12.0pt;color:purple'>4</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,8471.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>5)<span style="mso-spacerun:
+yes">    </span>7,9</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+5,6х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 5,7х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 7,2х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=6,68,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>8,5</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>- 4,8х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,8х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 3,5х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=9,95,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>4,3</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 4,2х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 3,2х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 9,3х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=8,6,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>3,2</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>- 1,4х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 8,9х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 3,3х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>6)<span style="mso-spacerun:
+yes">    </span>6</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>-<span style="mso-spacerun: yes">  </span>х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=11,33,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 6х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=32,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1<span
+style="mso-spacerun: yes">   </span></span></sub><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple'>-<span style="mso-spacerun: yes"> 
+</span>х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+6х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=42.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>7)<span style="mso-spacerun:
+yes">    </span>1,65</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>– 1,76х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,77х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=2,15,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;line-height:
+150%'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">          </span>-1,76</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 1,04х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-<span style="mso-spacerun:
+yes">  </span>2,61х</span><sub><span style='font-size:12.0pt;color:purple'>3 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=0,82,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,77</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>– 2,61х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes"> </span>- 3,18х</span><sub><span style='font-size:
+12.0pt;color:purple'>3 </span></sub><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple'>=-0,73.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>8)<span style="mso-spacerun:
+yes">    </span>0,53</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>– 0,75х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 1,83х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=0,68,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;line-height:
+150%'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">          </span>-0,75</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 0,68х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 1,19х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=0,95,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>1,83</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>– 1,19х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 2,15х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,27.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>9)<span style="mso-spacerun:
+yes">    </span>6,1818</span><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,1818х</span><sub><span
+style='font-size:12.0pt;color:purple'>2</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,3141х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,1415х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,1516х</span><sub><span
+style='font-size:12.0pt;color:purple'>5</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,2141х</span><sub><span
+style='font-size:12.0pt;color:purple'>6</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=7,1818,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,1818</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+7,1818х</span><sub><span
+style='font-size:12.0pt;color:purple'>2</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,2141х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,1815х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,1526х</span><sub><span
+style='font-size:12.0pt;color:purple'>5</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,3114х</span><sub><span
+style='font-size:12.0pt;color:purple'>6</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=8,2435,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,3141</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,2141х</span><sub><span
+style='font-size:12.0pt;color:purple'>2</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+8,2435х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,2114х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,2516х</span><sub><span
+style='font-size:12.0pt;color:purple'>5</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,2618х</span><sub><span
+style='font-size:12.0pt;color:purple'>6</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=9,3141, <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,1415</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,1815х</span><sub><span
+style='font-size:12.0pt;color:purple'>2</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,1244х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+9,3141х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,3145х</span><sub><span
+style='font-size:12.0pt;color:purple'>5</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,6843х</span><sub><span
+style='font-size:12.0pt;color:purple'>6</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=5,3116,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,1516</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,1526х</span><sub><span
+style='font-size:12.0pt;color:purple'>2</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,2516х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,3145х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+5,3116х</span><sub><span
+style='font-size:12.0pt;color:purple'>5</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,8998х</span><sub><span
+style='font-size:12.0pt;color:purple'>6</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=4,1313,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>0,2141</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,3114х</span><sub><span
+style='font-size:12.0pt;color:purple'>2</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,2618х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,6843х</span><sub><span
+style='font-size:12.0pt;color:purple'>4</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+0,8998х</span><sub><span
+style='font-size:12.0pt;color:purple'>5</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+4,1313х</span><sub><span
+style='font-size:12.0pt;color:purple'>6</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=3,1816.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>10)<span style="mso-spacerun:
+yes">     </span></span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>– 3х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>3<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'><span style="mso-spacerun: yes"> </span>-<span
+style="mso-spacerun: yes">          </span>2х</span><sub><span
+style='font-size:12.0pt;color:purple'>5 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=0,5,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">  </span>-3</span><span lang=EN-US style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 4х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 5х</span><sub><span
+style='font-size:12.0pt;color:purple'>3<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+<span style="mso-spacerun: yes">  </span></span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>4
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>– 3х</span><sub><span style='font-size:12.0pt;color:purple'>5<span
+style="mso-spacerun: yes">  </span></span></sub><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple'>=5,4,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-2</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> - 5х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 3х</span><sub><span
+style='font-size:12.0pt;color:purple'>3<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>- 2</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>4 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>5<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>=5,0,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">            </span>х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- </span><sub><span
+style='font-size:12.0pt;color:purple'><span style="mso-spacerun: yes"> </span></span></sub><span
+style='font-size:12.0pt;color:purple'>2</span><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple'>х</span><sub><span style='font-size:
+12.0pt;color:purple'>3<span style="mso-spacerun: yes">  </span></span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 5</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>4
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 3х</span><sub><span style='font-size:12.0pt;color:purple'>5<span
+style="mso-spacerun: yes">  </span></span></sub><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple'>=7,5,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-2</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> - 3х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 2х</span><sub><span
+style='font-size:12.0pt;color:purple'>3<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 3</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>4 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 4х</span><sub><span
+style='font-size:12.0pt;color:purple'>5<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>=3,3,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>11)<span style="mso-spacerun:
+yes">   </span>3</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-5 х</span><sub><span
+style='font-size:12.0pt;color:purple'>2<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>-<span style="mso-spacerun: yes">  </span>х</span><sub><span
+style='font-size:12.0pt;color:purple'>3<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+<span style="mso-spacerun: yes">  </span>2х</span><sub><span
+style='font-size:12.0pt;color:purple'>4<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>= 6,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;text-align:justify;line-height:
+150%'><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">           </span>-5</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 3х</span><sub><span
+style='font-size:12.0pt;color:purple'>3<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>– 4х</span><sub><span style='font-size:12.0pt;color:purple'>4 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=-12,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes"> </span>-</span><span lang=EN-US style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 3х</span><sub><span
+style='font-size:12.0pt;color:purple'>2</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + х</span><sub><span
+style='font-size:12.0pt;color:purple'>3<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>- </span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>4<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>= 1,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">   </span>2</span><span lang=EN-US style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 4х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span style="mso-spacerun:
+yes"> </span>- х</span><sub><span style='font-size:12.0pt;color:purple'>3<span
+style="mso-spacerun: yes">  </span></span></sub><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple'>- 3</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>4 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>= 3.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>12)<span style="mso-spacerun:
+yes">    </span>2,56</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,67х</span><sub><span
+style='font-size:12.0pt;color:purple'>2<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>- 1,78х</span><sub><span style='font-size:12.0pt;color:purple'>3 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,14,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">  </span>0,67</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> – 2,67х</span><sub><span
+style='font-size:12.0pt;color:purple'>2<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;color:purple'>+</span><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>1,35х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=0,66,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-1,78</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 1,35х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes"> </span>- 0,55х</span><sub><span style='font-size:
+12.0pt;color:purple'>3</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple'>=1,72.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>13)<span style="mso-spacerun:
+yes">    </span>4,25</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>– 1,48х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,73х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,44,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-1,48</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> +<span
+style="mso-spacerun: yes">  </span>1,73х</span><sub><span style='font-size:
+12.0pt;color:purple'>2 </span></sub><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple'>- 1,85х</span><sub><span style='font-size:12.0pt;
+color:purple'>3 </span></sub><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple'>=2,73,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">  </span>0,73</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>– 1,85х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span style="mso-spacerun:
+yes"> </span>+ 1,93х</span><sub><span style='font-size:12.0pt;color:purple'>3</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=-0,64.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>14)<span style="mso-spacerun:
+yes">   </span>1,54</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>– 0,75х</span><sub><span style='font-size:12.0pt;color:purple'>2<span
+style="mso-spacerun: yes">  </span></span></sub><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple'>+ 1,36х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=2,45,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-0,75</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 0,87х</span><sub><span
+style='font-size:12.0pt;color:purple'>2<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>- 0,79х</span><sub><span style='font-size:12.0pt;color:purple'>3 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,07,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes">  </span>1,36</span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1<span
+style="mso-spacerun: yes">  </span></span></sub><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple'>– 0,79х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,64х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=0,54.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>15)<span style="mso-spacerun:
+yes">    </span>1,42</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>– 2,15х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 1,07х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=2,48,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-2,15</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 0,76х</span><sub><span
+style='font-size:12.0pt;color:purple'>2<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>-<span style="mso-spacerun: yes">  </span>2,18х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,15,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes"> </span>1,07</span><span lang=EN-US style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>–<span style="mso-spacerun:
+yes">  </span>2,18х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes"> </span>+ 1,23х</span><sub><span style='font-size:
+12.0pt;color:purple'>3</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple'>=0,88.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>16)<span style="mso-spacerun:
+yes">   </span>1,63</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 1,27х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>- 0,84х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,51,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes"> </span>1,27</span><span lang=EN-US style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 0,65х</span><sub><span
+style='font-size:12.0pt;color:purple'>2 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+1,27х</span><sub><span
+style='font-size:12.0pt;color:purple'>3 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=-0,63,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-0,84 </span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 1,27х</span><sub><span style='font-size:12.0pt;color:purple'>2</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> - 1,21х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=2,15.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>17)<span style="mso-spacerun:
+yes">   </span>1,35</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>– 0,72х</span><sub><span
+style='font-size:12.0pt;color:purple'>2<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>+ 1,38х</span><sub><span style='font-size:12.0pt;color:purple'>3 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=0,88,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>-0,72</span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>1</span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'> + 1,45х</span><sub><span
+style='font-size:12.0pt;color:purple'>2<span style="mso-spacerun: yes"> 
+</span></span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>- 2,18х</span><sub><span style='font-size:12.0pt;color:purple'>3 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=1,72,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'><span
+style="mso-spacerun: yes"> </span>1,38</span><span lang=EN-US style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1 </span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>–<span style="mso-spacerun:
+yes">  </span>2,18х</span><sub><span style='font-size:12.0pt;color:purple'>2 </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>+ 0,93х</span><sub><span
+style='font-size:12.0pt;color:purple'>3</span></sub><span style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;color:purple'>=-0,72.<o:p></o:p></span></p>
+
+<h1>Метод прогонки</h1>
+
+<p class=MsoNormal><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>Решить системы уравнений методом прогонки. Результат выводить
+через 5 шагов (</span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>x</span><sub><span
+style='font-size:12.0pt;color:purple'>1, </span></sub><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>6, </span></sub><span
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple'>… </span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span style='font-size:12.0pt;color:purple'>21,
+</span></sub><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+color:purple'>…).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>18) x</span><sub><span lang=EN-US style='font-size:12.0pt;color:purple;
+mso-ansi-language:EN-US'>1<span style="mso-spacerun: yes">  </span></span></sub><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>=0,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span lang=EN-US style='font-size:12.0pt;
+color:purple;mso-ansi-language:EN-US'> i-1</span></sub><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'> -</span><span style='font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:purple;mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>x</span></span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span lang=EN-US style='font-size:12.0pt;
+color:purple;mso-ansi-language:EN-US'>i<span style="mso-spacerun: yes"> 
+</span></span></sub><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>+ x</span><sub><span lang=EN-US
+style='font-size:12.0pt;color:purple;mso-ansi-language:EN-US'>i+1 </span></sub><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>=i/n,<span style="mso-spacerun: yes"> 
+</span>i=2,3,…n-1,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span lang=EN-US style='font-size:12.0pt;
+color:purple;mso-ansi-language:EN-US'>n </span></sub><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>=1.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>n=21,41; </span><span style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:purple;mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>x</span></span><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>=1;1,5;2.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>19) x</span><sub><span lang=EN-US style='font-size:12.0pt;color:purple;
+mso-ansi-language:EN-US'>1 </span></sub><span lang=EN-US style='font-size:12.0pt;
+mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:EN-US'>- </span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;
+mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:"Times New Roman";
+color:purple;mso-ansi-language:EN-US;mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>d</span></span><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span lang=EN-US style='font-size:12.0pt;
+color:purple;mso-ansi-language:EN-US'>2</span></sub><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>=0,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span lang=EN-US style='font-size:12.0pt;
+color:purple;mso-ansi-language:EN-US'> i-1</span></sub><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'> -2x</span><sub><span lang=EN-US style='font-size:12.0pt;color:purple;
+mso-ansi-language:EN-US'>i<span style="mso-spacerun: yes">  </span></span></sub><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>+ x</span><sub><span lang=EN-US style='font-size:12.0pt;
+color:purple;mso-ansi-language:EN-US'>i+1 </span></sub><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>=i/n,<span style="mso-spacerun: yes">  </span>i=2,3,…n-1,<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>x</span><sub><span lang=EN-US style='font-size:12.0pt;
+color:purple;mso-ansi-language:EN-US'>n-1<span style="mso-spacerun: yes"> 
+</span></span></sub><span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:
+10.0pt;color:purple;mso-ansi-language:EN-US'>- x</span><sub><span lang=EN-US
+style='font-size:12.0pt;color:purple;mso-ansi-language:EN-US'>n</span></sub><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>=1.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>n=31,61; </span><span lang=EN-US style='font-size:
+12.0pt;mso-bidi-font-size:10.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:purple;mso-ansi-language:EN-US;
+mso-char-type:symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Symbol'>d</span></span><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>=0;0,5;1.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+</div>
+
+<span lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:
+"Times New Roman";mso-fareast-font-family:"Times New Roman";color:purple;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'><br
+clear=all style='page-break-before:auto;mso-break-type:section-break'>
+</span>
+
+<div class=Section3>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;text-indent:21.25pt;line-height:150%'><span
+lang=EN-US style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;
+mso-ansi-language:EN-US'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:14.2pt;text-align:justify;line-height:150%'><span lang=EN-US
+style='font-size:12.0pt;mso-bidi-font-size:10.0pt;color:purple;mso-ansi-language:
+EN-US'>&nbsp;<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

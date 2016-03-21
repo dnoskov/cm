@@ -1,0 +1,966 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<link rel=File-List href="./task_5.files/filelist.xml">
+<link rel=Edit-Time-Data href="./task_5.files/editdata.mso">
+<link rel=OLE-Object-Data href="./task_5.files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Решение нелинейных уравнений и систем нелинейных уравнений</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Елена</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Volena</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>79</o:TotalTime>
+  <o:Created>2005-09-23T04:43:00Z</o:Created>
+  <o:LastSaved>2005-09-23T04:43:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>382</o:Words>
+  <o:Characters>2181</o:Characters>
+  <o:Lines>18</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2678</o:CharactersWithSpaces>
+  <o:Version>9.3821</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:491219255;
+	mso-list-type:hybrid;
+	mso-list-template-ids:655499826 -1174788656 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l0:level1
+	{mso-level-tab-stop:54.0pt;
+	mso-level-number-position:left;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;}
+@list l1
+	{mso-list-id:608128074;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1334821268 68747279 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l1:level1
+	{mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2
+	{mso-list-id:1646928241;
+	mso-list-template-ids:1609478974;}
+@list l2:level1
+	{mso-level-start-at:7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:108.0pt;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level4
+	{mso-level-tab-stop:144.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:180.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:216.0pt;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l2:level7
+	{mso-level-tab-stop:252.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:288.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:324.0pt;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l3
+	{mso-list-id:1722947105;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1609478974 -1673860994 68747289 68747291 68747279 68747289 68747291 68747279 68747289 68747291;}
+@list l3:level1
+	{mso-level-start-at:7;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+@list l3:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:72.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:16.0pt;font-family:Arial'>Решение нелинейных
+уравнений и систем нелинейных уравнений<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:14.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Найти все корни нелинейного уравнения </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>f</span><span
+style='font-size:14.0pt'>(</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><span style='font-size:14.0pt'>)=0 следующими
+методами:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>-
+методом простой итерации;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>-
+методом Ньютона;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>-
+методом секущих;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>-
+методом вилки.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'>И
+для каждого корня вывести таблицу:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:32.15pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=128 valign=top style='width:95.7pt;border:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt'>Метод<o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>x</span><span style='font-size:14.0pt'>*- корень<o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>f</span><span
+  style='font-size:14.0pt'>(</span><span lang=EN-US style='font-size:14.0pt;
+  mso-ansi-language:EN-US'>x</span><span style='font-size:14.0pt'>*)<o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt'>Количество итераций<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=128 valign=top style='width:95.7pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt'>Вилки<o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=128 valign=top style='width:95.7pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt'>Простой итерации<o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=128 valign=top style='width:95.7pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt'>Секущих<o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=128 valign=top style='width:95.7pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt'>Ньютона<o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=128 valign=top style='width:95.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l1 level1 lfo1;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:14.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Методом Ньютона решить систему уравнений<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:18.0pt'><span style='font-size:14.0pt'><span
+style="mso-spacerun: yes">    </span></span><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'><sub><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:65.25pt;
+ height:39pt' o:ole="">
+ <v:imagedata src="./task_5.files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=87 height=52
+src="./task_5.files/image002.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1188973784">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:14.0pt'>и
+вывести таблицу:<o:p></o:p></span></p>
+
+<table border=1 cellspacing=0 cellpadding=0 style='margin-left:32.15pt;
+ border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr>
+  <td width=36 valign=top style='width:27.25pt;border:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>x*</span><span style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=48 valign=top style='width:36.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>y</span><span style='font-size:14.0pt'>*<o:p></o:p></span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+  style='font-size:14.0pt;mso-ansi-language:EN-US'>F(x*,y*)<o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+  EN-US'>G(x*,y*)</span><span style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border:solid windowtext .5pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span style='font-size:14.0pt'>Количество итераций<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=36 valign=top style='width:27.25pt;border:solid windowtext .5pt;
+  border-top:none;mso-border-top-alt:solid windowtext .5pt;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=48 valign=top style='width:36.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=96 valign=top style='width:72.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=108 valign=top style='width:81.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=216 valign=top style='width:162.0pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext .5pt;border-right:solid windowtext .5pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><![if !supportEmptyParas]>&nbsp;<![endif]><span
+  style='font-size:14.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:14.0pt'>Варианты
+заданий<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 54.0pt'><![if !supportLists]><span style='font-size:14.0pt'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-size:14.0pt'>а) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>– </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>cos</span><span lang=EN-US style='font-size:14.0pt'> </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>&#960;x</span><span
+style='font-size:14.0pt'> = 0, </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><span style='font-size:14.0pt'>&gt;0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+style='font-size:14.0pt'>) 2 – </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>xe<sup>x</sup></span><sup><span lang=EN-US
+style='font-size:14.0pt'> </span></sup><span style='font-size:14.0pt'>= 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>c</span><span
+style='font-size:14.0pt'>) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>5 </span></sup><span
+style='font-size:14.0pt'>+ 0,6</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>4 </span></sup><span
+style='font-size:14.0pt'>+ 0,7</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>3 </span></sup><span
+style='font-size:14.0pt'>+ 0,8</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>+ 0,9</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span lang=EN-US style='font-size:14.0pt'>
+</span></sup><span style='font-size:14.0pt'>+ 1 =0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:177.75pt;height:77.25pt'
+ o:ole="">
+ <v:imagedata src="./task_5.files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=237 height=103
+src="./task_5.files/image004.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1188973785">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 54.0pt'><![if !supportLists]><span style='font-size:14.0pt'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-size:14.0pt'>а</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>) </span><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:77.25pt;height:27.75pt'
+ o:ole="">
+ <v:imagedata src="./task_5.files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=103 height=37
+src="./task_5.files/image006.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1188973786">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b) sin x – cos<sup>2
+</sup>x + 0,25 = 0. </span><span style='font-size:14.0pt'>Найти два первых
+положительных корня;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>c) 5x <sup><span
+style="mso-spacerun: yes"> </span></sup>– 8ln x =8. </span><span
+style='font-size:14.0pt'>Найти наименьший положительный корень.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1045" type="#_x0000_t75" style='width:161.25pt;height:95.25pt'
+ o:ole="">
+ <v:imagedata src="./task_5.files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=215 height=127
+src="./task_5.files/image008.gif" v:shapes="_x0000_i1045"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1188973787">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 54.0pt'><![if !supportLists]><span style='font-size:14.0pt'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-size:14.0pt'>а) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1047"
+ type="#_x0000_t75" style='width:74.25pt;height:39pt' o:ole="">
+ <v:imagedata src="./task_5.files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=99 height=52
+src="./task_5.files/image010.gif" v:shapes="_x0000_i1047"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1188973788">
+ </o:OLEObject>
+</xml><![endif]-->;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+style='font-size:14.0pt'>) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>4 </span></sup><span
+style='font-size:14.0pt'>– 3</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>3 </span></sup><span
+style='font-size:14.0pt'>+ 8</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>– 5 =0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>c</span><span
+style='font-size:14.0pt'>) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>e<sup>x</sup></span><span style='font-size:14.0pt'> + </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>e</span><sup><span
+style='font-size:14.0pt'>-3</span></sup><sup><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>x</span></sup><span style='font-size:14.0pt'> =
+4, x&gt;0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:159.75pt;height:95.25pt'
+ o:ole="">
+ <v:imagedata src="./task_5.files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=213 height=127
+src="./task_5.files/image012.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1188973789">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 54.0pt'><![if !supportLists]><span style='font-size:14.0pt'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-size:14.0pt'>а) 6 – 5</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>sh</span><span lang=EN-US style='font-size:14.0pt'> </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x</span><span
+style='font-size:14.0pt'> = 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+style='font-size:14.0pt'>) 2 – </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>xe<sup>x</sup></span><sup><span lang=EN-US
+style='font-size:14.0pt'> </span></sup><span style='font-size:14.0pt'>= 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>c</span><span
+style='font-size:14.0pt'>) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>5 </span></sup><span
+style='font-size:14.0pt'>+ 0,6</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>4 </span></sup><span
+style='font-size:14.0pt'>+ 0,7</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>3 </span></sup><span
+style='font-size:14.0pt'>+ 0,8</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>+ 0,9</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span lang=EN-US style='font-size:14.0pt'>
+</span></sup><span style='font-size:14.0pt'>+ 1 =0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:176.25pt;height:99pt' o:ole="">
+ <v:imagedata src="./task_5.files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=235 height=132
+src="./task_5.files/image014.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1188973790">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 54.0pt'><![if !supportLists]><span style='font-size:14.0pt'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-size:14.0pt'>а) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>– </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>cos</span><sup><span style='font-size:14.0pt'>4 </span></sup><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>p</span></span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x</span><span
+style='font-size:14.0pt'> = 0, </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><span style='font-size:14.0pt'>&gt;0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b) 1/x – </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>p</span></span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>cos </span><span
+style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>p</span></span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x<sup> </sup>= 0. </span><span
+style='font-size:14.0pt'>Найти наименьший положительный корень;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>c</span><span
+style='font-size:14.0pt'>) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>3 </span></sup><span
+style='font-size:14.0pt'>– 4</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>+ 10</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'><span
+style="mso-spacerun: yes">  </span></span></sup><span style='font-size:14.0pt'>–
+10 = 0, x</span><span style='font-size:14.0pt;font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>&Icirc;</span></span><span style='font-size:14.0pt'>(1,5; 1,7).<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1050" type="#_x0000_t75" style='width:125.25pt;height:57pt' o:ole="">
+ <v:imagedata src="./task_5.files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=167 height=76
+src="./task_5.files/image016.gif" v:shapes="_x0000_i1050"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1188973791">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo2;
+tab-stops:list 54.0pt'><![if !supportLists]><span style='font-size:14.0pt'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-size:14.0pt'>а) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1033"
+ type="#_x0000_t75" style='width:102.75pt;height:35.25pt' o:ole="">
+ <v:imagedata src="./task_5.files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=137 height=47
+src="./task_5.files/image018.gif" v:shapes="_x0000_i1033"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1188973792">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-spacerun: yes"> </span>Найти первый
+положительный корень;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>b) e<sup>x </sup>–
+2(x – 1)<sup>2</sup> = 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>c) 5x<sup>3 </sup>+
+2x<sup>2 </sup>– 15x<sup><span style="mso-spacerun: yes">  </span></sup>– 6 =
+0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1034" type="#_x0000_t75" style='width:141pt;height:63pt' o:ole="">
+ <v:imagedata src="./task_5.files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=188 height=84
+src="./task_5.files/image020.gif" v:shapes="_x0000_i1034"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1188973793">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:14.0pt'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>а)
+</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>e<sup>x</sup></span><span
+style='font-size:14.0pt'> + </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>– 2 = 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>b) </span><span
+style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1040"
+ type="#_x0000_t75" style='width:98.25pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./task_5.files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=131 height=41
+src="./task_5.files/image022.gif" v:shapes="_x0000_i1040"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1188973794">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>c) x<sup>7 </sup>– 2x<sup>5 </sup>–
+3x<sup>3 </sup>+ 4x<sup>2 </sup>– 5x<sup> </sup>+ 6 =0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:141pt;height:56.25pt' o:ole="">
+ <v:imagedata src="./task_5.files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=188 height=75
+src="./task_5.files/image024.gif" v:shapes="_x0000_i1039"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1188973795">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:14.0pt'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>а)
+</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x</span><span
+style='font-size:14.0pt'> – </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>a<sup>x</sup></span><span style='font-size:14.0pt'> =
+0, </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>a</span><span
+style='font-size:14.0pt'>=0,5;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>b) </span><span
+style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape id="_x0000_i1041"
+ type="#_x0000_t75" style='width:87.75pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./task_5.files/image025.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=117 height=41
+src="./task_5.files/image026.gif" v:shapes="_x0000_i1041"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1188973796">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'>;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>c) 5x<sup>3 </sup>+ 2x<sup>2 </sup>–
+15x<sup><span style="mso-spacerun: yes">  </span></sup>– 6 =0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:104.25pt;height:38.25pt'
+ o:ole="">
+ <v:imagedata src="./task_5.files/image027.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=139 height=51
+src="./task_5.files/image028.gif" v:shapes="_x0000_i1038"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1188973797">
+ </o:OLEObject>
+</xml><![endif]--></span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:14.0pt'>9.<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>а)
+</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>sin</span><span
+lang=EN-US style='font-size:14.0pt'> </span><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>x</span><span style='font-size:14.0pt'> – </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>cos</span><span
+style='font-size:14.0pt'>2</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><span style='font-size:14.0pt'> +0,25 = 0.
+Найти два первых положительных корня;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+style='font-size:14.0pt'>) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1051"
+ type="#_x0000_t75" style='width:75.75pt;height:30.75pt' o:ole="">
+ <v:imagedata src="./task_5.files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=101 height=41
+src="./task_5.files/image030.gif" v:shapes="_x0000_i1051"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1051"
+  DrawAspect="Content" ObjectID="_1188973798">
+ </o:OLEObject>
+</xml><![endif]-->. Найти первый положительный корень;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>c</span><span
+style='font-size:14.0pt'>) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>3 </span></sup><span
+style='font-size:14.0pt'>+ </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>– 10</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'><span
+style="mso-spacerun: yes">  </span></span></sup><span style='font-size:14.0pt'>+
+8 =0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:132pt;height:56.25pt' o:ole="">
+ <v:imagedata src="./task_5.files/image031.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=176 height=75
+src="./task_5.files/image032.gif" v:shapes="_x0000_i1037"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1188973799">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:14.0pt'>10.<span
+style='font:7.0pt "Times New Roman"'> </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>а)
+(</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x</span><span
+style='font-size:14.0pt'> – 1)<sup>2</sup> – </span><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>e</span><sup><span
+style='font-size:14.0pt'>-</span></sup><sup><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>x</span></sup><span style='font-size:14.0pt'> =
+0, </span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>x</span><span
+style='font-size:14.0pt'>&#8800;0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>b</span><span
+style='font-size:14.0pt'>) <sub><!--[if gte vml 1]><v:shape id="_x0000_i1042"
+ type="#_x0000_t75" style='width:89.25pt;height:33.75pt' o:ole="">
+ <v:imagedata src="./task_5.files/image033.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=119 height=45
+src="./task_5.files/image034.gif" v:shapes="_x0000_i1042"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1188973800">
+ </o:OLEObject>
+</xml><![endif]-->. Найти наименьший положительный корень;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>c</span><span
+style='font-size:14.0pt'>) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>5 </span></sup><span
+style='font-size:14.0pt'>– </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>4 </span></sup><span
+style='font-size:14.0pt'>+ 2</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>3 </span></sup><span
+style='font-size:14.0pt'>– 3</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>+ 4</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span lang=EN-US style='font-size:14.0pt'>
+</span></sup><span style='font-size:14.0pt'>&#8722; 5 =0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:168pt;height:48pt' o:ole="">
+ <v:imagedata src="./task_5.files/image035.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=224 height=64
+src="./task_5.files/image036.gif" v:shapes="_x0000_i1036"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1188973801">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>Найти
+корни, расположенные в области, ограниченной прямыми:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>y = 0, y = x, x = 0,5. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo3;
+tab-stops:list 36.0pt'><![if !supportLists]><span style='font-size:14.0pt'>11.<span
+style='font:7.0pt "Times New Roman"'> </span></span><![endif]><span
+style='font-size:14.0pt'>Решить уравнения:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>а)
+</span><span lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>ln</span><span
+style='font-size:14.0pt'> (3</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><span style='font-size:14.0pt'> – 1) + </span><span
+lang=EN-US style='font-size:14.0pt;mso-ansi-language:EN-US'>e</span><sup><span
+style='font-size:14.0pt'>2</span></sup><sup><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>x</span></sup><sup><span style='font-size:14.0pt'>-1</span></sup><span
+style='font-size:14.0pt'> = 0;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>b) xtg x = 1,28. </span><span
+style='font-size:14.0pt'>Найти наименьший положительный корень;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>c</span><span
+style='font-size:14.0pt'>) </span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>5 </span></sup><span
+style='font-size:14.0pt'>– 0,27</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>4 </span></sup><span
+style='font-size:14.0pt'>&#8722; 1,93</span><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>3 </span></sup><span
+style='font-size:14.0pt'>+ 7,27</span><span lang=EN-US style='font-size:14.0pt;
+mso-ansi-language:EN-US'>x</span><sup><span style='font-size:14.0pt'>2 </span></sup><span
+style='font-size:14.0pt'>&#8722; 0,37</span><span lang=EN-US style='font-size:
+14.0pt;mso-ansi-language:EN-US'>x</span><sup><span lang=EN-US style='font-size:
+14.0pt'> </span></sup><span style='font-size:14.0pt'>+ 1,01 =0.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span style='font-size:14.0pt'>Решить
+систему уравнений:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:90pt;height:56.25pt' o:ole="">
+ <v:imagedata src="./task_5.files/image037.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=120 height=75
+src="./task_5.files/image038.gif" v:shapes="_x0000_i1035"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1188973802">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:14.0pt'>Найти
+корни, расположенные в области, ограниченной прямыми:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span lang=EN-US
+style='font-size:14.0pt;mso-ansi-language:EN-US'>y = 0, y = x, x = 0,5.<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
