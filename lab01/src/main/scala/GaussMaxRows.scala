@@ -1,7 +1,7 @@
 /**
   * Created by noname on 21.03.16.
   */
-case class GaussMax(L: Array[Array[Double]], r: Array[Double]) extends Method(L, r) {
+case class GaussMaxRows(L: Array[Array[Double]], r: Array[Double]) extends Method(L, r) {
 
   def swaprows(i: Int, j: Int) = {
     val tmpa = A(i)
