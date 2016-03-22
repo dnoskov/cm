@@ -1,0 +1,25 @@
+(
+ :root-dir "/media/data/edu/repos/cm"
+ :cache-dir "/media/data/edu/repos/cm/.ensime_cache"
+ :scala-compiler-jars ("/home/noname/.sbt/boot/scala-2.10.6/lib/scala-compiler.jar" "/home/noname/.sbt/boot/scala-2.10.6/lib/scala-library.jar" "/home/noname/.sbt/boot/scala-2.10.6/lib/scala-reflect.jar" "/home/noname/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.6.jar")
+ :name "cm"
+ :java-home "/usr/lib/jvm/java-8-openjdk"
+ :java-flags ("-Xss2m" "-Xms1024m" "-Xmx1024m" "-XX:ReservedCodeCacheSize=128m" "-XX:MaxMetaspaceSize=256m")
+ :reference-source-roots ("/usr/lib/jvm/java-8-openjdk/src.zip")
+ :scala-version "2.10.6"
+ :compiler-args ("-feature" "-deprecation" "-Xlint" "-Yinline-warnings" "-Yno-adapted-args" "-Ywarn-dead-code" "-Ywarn-numeric-widen" "-Xfuture")
+ :formatting-prefs nil
+ :disable-source-monitoring nil
+ :disable-class-monitoring nil
+ :subprojects ((
+   :name "cm"
+   :source-roots ("/media/data/edu/repos/cm/src/main/scala")
+   :targets ("/media/data/edu/repos/cm/target/scala-2.10/classes")
+   :test-targets ("/media/data/edu/repos/cm/target/scala-2.10/test-classes")
+   :depends-on-modules nil
+   :compile-deps ("/home/noname/.sbt/boot/scala-2.10.6/lib/scala-library.jar")
+   :runtime-deps nil
+   :test-deps nil
+   :doc-jars ("/media/data/edu/repos/cm/target/scala-2.10/cm_2.10-0.1-SNAPSHOT-javadoc.jar" "/home/noname/.ivy2/cache/org.scala-lang/scala-library/docs/scala-library-2.10.6-javadoc.jar")
+   :reference-source-roots ("/home/noname/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.6-sources.jar")))
+)

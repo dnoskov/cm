@@ -1,0 +1,15 @@
+package lab02
+
+import common.las.Method
+
+case class Jacobi(L: Array[Array[Double]], r: Array[Double],
+  eps: Double,
+  x0 = Array.ofDi) extends Method(L,r) {
+
+  val x0 = Array.ofDim[Double](dim)
+  val x1 = Array.ofDim[Double](dim)
+  for (i <- 0 until dim) {
+    x1(i) = (f(i) - (0 until i).map( j => A(i)(j) * x0(j)).sum - (i+1 until dim).map( j => A(i)(j) * x0(j)).sum)/A(i)(i)
+  }
+
+}
