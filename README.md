@@ -19,16 +19,19 @@
 
    например, lab02.Jacobi - это первый итерационный метод: Якоби, имеет
    следующий конструктор:
-
-   case class Jacobi(L: Array[Array[Double]], r: Array[Double],
+   
+```scala
+case class Jacobi(L: Array[Array[Double]], r: Array[Double],
      eps: Double,
      x0: Array[Double]) extends Method(L,r)
+```
 
 В результате выполнения конструктора выполнятся необходимые вычисления,
 и результат тогда можно будет посмотреть так (приведу полный текст
 команд, которые надо выполнить в sbt console, чтобы оно полетело (на
 примере второй лабы)):
 
+```scala
 val (lhs, rhs) =
 common.input.Octave.readOctaveSave("octave/lab02/sys01.cm")
 
@@ -39,6 +42,7 @@ val j = lab02.Jacobi(lhs, rhs, 0.1, x0)
 j.X   			  // Выведет результат
 (j.lhs, j.rhs) 		  // Выведет (левую, правую) части исходной
 системы
+```
 
 также есть наборы полей, в которых содержатся вычислительные
 сведения. Для справки тут, см. описание соотв метода в книге или
