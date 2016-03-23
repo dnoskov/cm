@@ -27,3 +27,6 @@ project/plugins/project/
 
 # Idea
 .idea/
+
+# Emacs
+#*~
