@@ -22,8 +22,8 @@ project/plugins/project/
 *.djvu
 
 # Ensime
-.ensime/*
-.ensime_cache/*
+.ensime
+.ensime_cache/
 
 # Idea
-.idea/*
+.idea/
