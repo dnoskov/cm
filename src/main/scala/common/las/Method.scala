@@ -3,16 +3,24 @@ package common.las
 import math._
 
 abstract class Method(L: Array[Array[Double]], r: Array[Double]) {
+
+  val fmt = "%7.4f"
+
   def matrixRepr(a: Array[Array[Double]]): String = {
     val s = StringBuilder.newBuilder
-    for (row <- a) s ++= row map (el => f"$el%7.4f") mkString("(", " ", ")\n")
+
+    for (row <- a) s ++= row map (el => fmt.format(el)) mkString("(", " ", ")\n")
     s.result
   }
 
   def vectorRepr(v: Array[Double]): String = {
     val s = StringBuilder.newBuilder
-    for (el <- v) s ++= "(" + f"$el%7.4f" + ")\n"
+    for (el <- v) s ++= "(" + fmt.format(el) + ")\n"
     s.result
+  }
+
+  def rowRepr(v: Array[Double]): String = {
+    v map { el => fmt.format(el) } mkString("(", " ", ")")
   }
 
   def error(a: Array[Double], b: Array[Double]): Double = {
@@ -26,7 +34,7 @@ abstract class Method(L: Array[Array[Double]], r: Array[Double]) {
 
   val x = Array.ofDim[Double](dim)
 
-  def X = println(vectorRepr(x))
+  def X = rowRepr(x)
 
   def lhs = println(matrixRepr(L))
 

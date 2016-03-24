@@ -4,7 +4,9 @@ import common.las.Method
 
 case class Jacobi(L: Array[Array[Double]], r: Array[Double],
   eps: Double,
-  x0: Array[Double]) extends Method(L,r) {
+  var x0: Array[Double]) extends Method(L,r) {
+
+  if (x0.length == 0) x0 = Array.ofDim[Double](dim)
 
   val x1 = Array.ofDim[Double](dim)
   for (i <- 0 until dim) {
