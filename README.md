@@ -35,12 +35,10 @@ case class Jacobi(L: Array[Array[Double]], r: Array[Double],
 val (lhs, rhs) =
 common.input.Octave.readOctaveSave("octave/lab02/sys01.cm")
 
-val x0 = Array.ofDim[Double](lhs.length)
+val J = lab02.Jacobi(lhs, rhs, 0.01, Array.ofDim[Double](lhs.length))
 
-val j = lab02.Jacobi(lhs, rhs, 0.1, x0)
-
-j.X   			  // Выведет результат
-(j.lhs, j.rhs) 		  // Выведет (левую, правую) части исходной
+J.X   			  // Выведет результат
+(J.lhs, J.rhs) 		  // Выведет (левую, правую) части исходной
 системы
 ```
 
