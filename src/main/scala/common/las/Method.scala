@@ -6,6 +6,8 @@ abstract class Method(L: Array[Array[Double]], r: Array[Double]) {
 
   val fmt = "%7.4f"
 
+  var k = 0
+
   def matrixRepr(a: Array[Array[Double]]): String = {
     val s = StringBuilder.newBuilder
 

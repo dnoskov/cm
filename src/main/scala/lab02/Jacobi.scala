@@ -13,7 +13,7 @@ case class Jacobi(L: Array[Array[Double]], r: Array[Double],
     x1(i) = (f(i) - (0 until i).map( j => A(i)(j) * x0(j)).sum - (i+1 until dim).map( j => A(i)(j) * x0(j)).sum)/A(i)(i)
   }
 
-  var k = 0
+  k = 1
 
   while(error(x0, x1) >= eps) {
     (0 until dim).map( i => x0(i) = x1(i))
