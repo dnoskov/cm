@@ -1,0 +1,21 @@
+# Created by Octave 4.0.0, Thu Mar 31 14:38:29 2016 SAMT <noname@pleroma>
+# name: A
+# type: matrix
+# rows: 4
+# columns: 4
+ 6.22 1.42 -1.72 1.91
+ 1.42 5.33 1.11 -1.82
+ -1.72 1.11 5.24 1.42
+ 1.91 -1.82 1.42 6.55
+
+
+# name: b
+# type: matrix
+# rows: 4
+# columns: 1
+ 7.53
+ 6.06
+ 8.050000000000001
+ 8.06
+
+
