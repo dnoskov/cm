@@ -14,8 +14,8 @@ case class GaussMaxRows(L: Array[Array[Double]], r: Array[Double]) extends Metho
   }
 
   def maxElRowIndex(col: Int): Int = {
-    var maxi = 0
-    for (i <- 1 until dim) maxi = if (A(maxi)(col) < A(i)(col)) i else maxi
+    var maxi = col
+    for (i <- col+1 until dim) maxi = if (A(maxi)(col) < A(i)(col)) i else maxi
     maxi
   }
 

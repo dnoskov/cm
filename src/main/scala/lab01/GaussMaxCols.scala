@@ -14,7 +14,8 @@ case class GaussMaxCols(L: Array[Array[Double]], r: Array[Double]) extends Metho
   }
 
   def maxElColIndex(row: Int): Int = {
-    A(row).indexOf(A(row).maxBy(e => abs(e)))
+    val sub = A(row).slice(row, dim-1)
+    sub.indexOf(sub.maxBy(e => abs(e)))
   }
 
   //  Прямой ход
@@ -27,15 +28,15 @@ case class GaussMaxCols(L: Array[Array[Double]], r: Array[Double]) extends Metho
 
   for (k <- 0 until dim) {
     if (A(k)(k) == 0) swapcols(k, maxElColIndex(k))
-    for (j <- k + 1 until dim) c(k)(j) = A(k)(j) / A(k)(k)
+    for (j <- k + 1 until dim) A(j)(k) = A(j)(k) / A(j)(j)
     y(k) = f(k) / A(k)(k)
     for (i <- k + 1 until dim) {
-      f(i) -= A(i)(k) * y(k)
-      for (j <- k + 1 until dim) A(i)(j) -= A(i)(k) * c(k)(j)
+      f(k) -= A(k)(i) * y(i)
+      for (j <- k + 1 until dim) A(j)(i) -= A(k)(j) * c(j)(k)
     }
   }
 
   // Обратный ход
-  for (i <- dim - 1 to 0 by -1) x(i) = y(i) - (i + 1 until dim).map((j) => c(i)(j) * x(j)).sum
+  for (i <- dim - 1 to 0 by -1) x(i) = y(i) - (i + 1 until dim).map((j) => c(j)(i) * x(i)).sum
 
 }

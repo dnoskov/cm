@@ -4,9 +4,7 @@ import math._
 
 abstract class Method(L: Array[Array[Double]], r: Array[Double]) {
 
-  val fmt = "%7.4f"
-
-  var k = 0
+  val fmt = "%10.6f"
 
   def matrixRepr(a: Array[Array[Double]]): String = {
     val s = StringBuilder.newBuilder
@@ -23,11 +21,6 @@ abstract class Method(L: Array[Array[Double]], r: Array[Double]) {
 
   def rowRepr(v: Array[Double]): String = {
     v map { el => fmt.format(el) } mkString("(", " ", ")")
-  }
-
-  def error(a: Array[Double], b: Array[Double]): Double = {
-    val delta = (0 until dim).map( i => a(i) - b(i))
-    abs(delta.maxBy(abs))
   }
 
   val A = L map (_.clone)
